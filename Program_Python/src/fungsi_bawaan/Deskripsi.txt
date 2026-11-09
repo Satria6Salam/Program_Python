@@ -1,0 +1,54 @@
+Python memiliki banyak fungsi bawaan (built-in functions) yang bisa langsung 
+digunakan tanpa perlu mengimpor modul tambahan. Berikut adalah beberapa fungsi 
+bawaan yang sering digunakan beserta penjelasannya:
+
+1. Fungsi untuk Tipe Data & Konversi
+Fungsi	                Deskripsi
+int(x)	                Mengonversi x menjadi integer
+float(x)	            Mengonversi x menjadi float
+str(x)	                Mengonversi x menjadi string
+bool(x)	                Mengonversi x menjadi True atau False
+list(iterable)	        Mengonversi iterable (tuple, set, dll.) menjadi list
+tuple(iterable)	        Mengonversi iterable menjadi tuple
+set(iterable)	        Mengonversi iterable menjadi set
+dict()	                Membuat dictionary baru
+chr(x)	                Mengembalikan karakter berdasarkan kode ASCII x
+ord(x)	                Mengembalikan kode ASCII dari karakter x
+bin(x), hex(x), oct(x)	Mengonversi angka ke biner (0b), heksadesimal (0x), atau oktal (0o)
+
+
+2. Fungsi untuk Operasi Matematika
+Fungsi	        Deskripsi
+abs(x)	        Mengembalikan nilai absolut dari x
+pow(x, y)	    Mengembalikan hasil x pangkat y (x**y)
+round(x, n)     Membulatkan x ke n angka desimal
+max(iterable)	Mengembalikan nilai terbesar dari iterable
+min(iterable)	Mengembalikan nilai terkecil dari iterable
+sum(iterable)	Mengembalikan jumlah semua elemen dalam iterable
+
+
+3. Fungsi untuk String & Koleksi Data
+Fungsi	                            Deskripsi
+len(iterable)	                    Mengembalikan panjang dari iterable (string, list, dll.)
+sorted(iterable, reverse=False)	    Mengembalikan daftar yang sudah diurutkan
+reversed(iterable)	                Mengembalikan iterator yang membalik urutan iterable
+enumerate(iterable, start=0)	    Mengembalikan iterator dengan indeks dan nilai
+zip(iter1, iter2, ...)	            Menggabungkan beberapa iterable menjadi satu
+map(func, iterable)	                Menerapkan fungsi func ke setiap elemen iterable
+filter(func, iterable)	            Menyaring elemen iterable yang memenuhi kondisi func
+
+
+4. Fungsi untuk Input/Output
+Fungsi	                            Deskripsi
+print(*objects, sep=' ', end='\n')	Menampilkan teks ke layar
+input(prompt)	                    Mengambil input dari pengguna sebagai string
+open(filename, mode)	            Membuka file dalam mode tertentu ('r', 'w', 'a', 'rb', dll.)
+
+
+5. Fungsi untuk Pengecekan & Evaluasi
+Fungsi	                    Deskripsi
+isinstance(obj, classinfo)	Mengecek apakah obj merupakan instance dari classinfo
+type(obj)	                Mengembalikan tipe data dari obj
+id(obj)	                    Mengembalikan alamat memori dari obj
+eval(expression)	        Mengevaluasi string sebagai kode Python
+exec(code)	                Mengeksekusi string sebagai kode Python

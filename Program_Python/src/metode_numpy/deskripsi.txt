@@ -1,0 +1,134 @@
+Pengertian NumPy
+NumPy (Numerical Python) adalah pustaka (library) dalam bahasa pemrograman Python yang digunakan untuk komputasi ilmiah. 
+NumPy menyediakan dukungan untuk array multidimensi (ndarray) dan berbagai fungsi matematika tingkat tinggi yang efisien
+untuk operasi pada array tersebut. Library ini sangat populer dalam analisis data, machine learning, 
+dan komputasi numerik lainnya.
+
+Kegunaan atau Manfaat NumPy
+NumPy memiliki berbagai manfaat dalam pemrograman Python, terutama dalam bidang komputasi numerik, di antaranya:
+
+1 Array Multidimensi yang Efisien
+    NumPy menyediakan struktur data ndarray, yang lebih cepat dan lebih hemat 
+    memori dibandingkan dengan daftar (list) bawaan Python.
+2. Operasi Matematika dan Statistik
+    NumPy memiliki berbagai fungsi untuk operasi matematika seperti penjumlahan, 
+    perkalian, mean, median, standar deviasi, dan lainnya.
+3. Kompatibilitas dengan Library Lain
+    Banyak pustaka dalam ekosistem Python seperti Pandas, SciPy, Matplotlib, 
+    dan TensorFlow bergantung pada NumPy untuk manipulasi data.
+4. Kemampuan Broadcasting
+    NumPy mendukung operasi antara array dengan ukuran berbeda tanpa perlu melakukan loop manual.
+5. Pemrosesan Data dalam Ilmu Data & Machine Learning
+    NumPy sering digunakan dalam pra-pemrosesan data sebelum digunakan dalam model machine learning.
+
+Metode atau Fungsi yang Disediakan dalam NumPy
+Berikut adalah beberapa metode atau fungsi penting dalam NumPy:
+
+1. Pembuatan Array
+numpy.array() → Membuat array dari list atau tuple.
+numpy.zeros() → Membuat array dengan elemen nol.
+numpy.ones() → Membuat array dengan elemen satu.
+numpy.arange() → Membuat array dengan rentang nilai tertentu.
+numpy.linspace() → Membuat array dengan nilai yang dibagi rata dalam interval tertentu.
+numpy.full() → Membuat array dengan elemen yang sama.
+numpy.eye() → Membuat matriks identitas.
+numpy.diag() → Membuat array diagonal
+
+2. Operasi Matematika
+numpy.add(), numpy.subtract(), numpy.multiply(), numpy.divide()
+numpy.sum() → Menjumlahkan semua elemen dalam array.
+numpy.mean() → Menghitung rata-rata.
+numpy.median() → Menghitung median.
+numpy.std() → Menghitung standar deviasi.
+numpy.subtract() → Pengurangan dua array.
+numpy.multiply() → Perkalian dua array.
+numpy.divide() → Pembagian dua array.
+numpy.power() → Pangkat elemen array.
+numpy.mod() → Modulo (sisa pembagian).
+numpy.exp() → Eksponensial elemen array.
+numpy.log() → Logaritma natural (basis e).
+numpy.log10() → Logaritma basis 10.
+numpy.log2() → Logaritma basis 2.
+numpy.sqrt() → Akar kuadrat elemen array.
+numpy.abs() → Nilai absolut elemen array.
+numpy.round() → Membulatkan elemen array ke bilangan terdekat.
+numpy.ceil() → Membulatkan ke atas.
+numpy.floor() → Membulatkan ke bawah.
+numpy.sin(), numpy.cos(), numpy.tan() → Fungsi trigonometri.
+numpy.deg2rad() / numpy.rad2deg() → Konversi derajat ↔ radian.
+numpy.var() → Menghitung varians.
+numpy.min() / numpy.max() → Mencari nilai minimum/maksimum dalam array.
+numpy.argmin() / numpy.argmax() → Mencari indeks nilai minimum/maksimum.
+
+3. Operasi pada Array
+numpy.reshape() → Mengubah dimensi array.
+numpy.concatenate() → Menggabungkan dua array.
+numpy.transpose() → Transpos matriks.
+numpy.hstack() → Menggabungkan array secara horizontal.
+numpy.vstack() → Menggabungkan array secara vertikal.
+numpy.split() → Membagi array menjadi beberapa sub-array.
+numpy.tile() → Mengulang array dalam pola tertentu.
+numpy.repeat() → Mengulang elemen dalam array.
+
+4. Pembuatan Matriks Acak
+numpy.random.rand() → Membuat array dengan angka acak antara 0 dan 1.
+numpy.random.randint() → Membuat array dengan angka acak dalam rentang tertentu.
+numpy.random.randn() → Membuat array dengan distribusi normal.
+numpy.random.choice() → Mengambil elemen acak dari array.
+numpy.random.shuffle() → Mengacak elemen array.
+numpy.random.permutation() → Mengembalikan permutasi acak dari array.
+
+5. Sorting dan Filtering
+numpy.sort() → Mengurutkan elemen array.
+numpy.argsort() → Mengembalikan indeks urutan elemen array.
+numpy.lexsort() → Mengurutkan array berdasarkan beberapa kriteria.
+numpy.where() → Mengembalikan indeks elemen yang memenuhi kondisi.
+numpy.nonzero() → Mengembalikan indeks elemen bukan nol.
+numpy.unique() → Mengambil elemen unik dalam array.
+
+
+5. Manipulasi Bentuk (Shape Manipulation)
+numpy.reshape() → Mengubah dimensi array.
+numpy.ravel() → Mengubah array multidimensi menjadi satu dimensi.
+numpy.flatten() → Sama seperti ravel(), tetapi menghasilkan salinan.
+numpy.expand_dims() → Menambahkan dimensi baru ke array.
+numpy.squeeze() → Menghapus dimensi yang bernilai 1.
+
+6. Operasi Matriks dan Linear Algebra
+numpy.dot() → Perkalian dot product dua array.
+numpy.matmul() → Perkalian matriks.
+numpy.linalg.inv() → Mencari invers matriks.
+numpy.linalg.det() → Menghitung determinan matriks.
+numpy.linalg.eig() → Menghitung nilai eigen dan vektor eigen.
+numpy.linalg.svd() → Singular Value Decomposition (SVD).
+numpy.linalg.solve() → Menyelesaikan sistem persamaan linear.
+
+7. Operasi Logika dan Boolean
+numpy.all() → Mengecek apakah semua elemen array True.
+numpy.any() → Mengecek apakah ada minimal satu elemen True.
+numpy.logical_and() → Operasi AND pada array boolean.
+numpy.logical_or() → Operasi OR pada array boolean.
+numpy.logical_not() → Operasi NOT pada array boolean.
+
+8. Operasi Bitwise
+numpy.bitwise_and() → Operasi AND bitwise.
+numpy.bitwise_or() → Operasi OR bitwise.
+numpy.bitwise_xor() → Operasi XOR bitwise.
+numpy.invert() → Inversi bitwise.
+
+10. Operasi String
+numpy.char.add() → Menggabungkan string dalam array.
+numpy.char.multiply() → Mengulang string dalam array.
+numpy.char.capitalize() → Kapitalisasi string.
+numpy.char.upper() → Mengubah string menjadi huruf besar.
+numpy.char.lower() → Mengubah string menjadi huruf kecil.
+numpy.char.strip() → Menghapus spasi di awal/akhir string.
+numpy.char.replace() → Mengganti substring dalam array.
+
+11. Konversi Tipe Data
+numpy.astype() → Mengubah tipe data array.
+numpy.tofile() → Menyimpan array ke file.
+numpy.fromfile() → Membaca array dari file.
+numpy.save() → Menyimpan array dalam format .npy.
+numpy.load() → Membaca array dari format .npy.
+
